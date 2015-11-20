@@ -96,3 +96,29 @@ a {
     -webkit-flex: 1;
     flex: 1;
 }
+
+header{
+  width: 100%;
+  height: 80px;
+  z-index: 99;
+  position: absolute;
+}
+header a{
+  width: 155px;
+  height: 80px;
+  float: left;
+  display: block;
+  padding: 0 16px;
+  text-indent: -99999px;
+  background: url(../img/logo_left.png) no-repeat center center;
+}
+#logo_right{
+  width: 41px;
+  float: right;
+  background-image: url(../img/logo_right.png);
+}
+.page{position: relative;display: none;}
+.page img:first-child{width: 100%;display: block;}
+.core{position: absolute;top: 0;}
+
+#page_4_1{display: block;}

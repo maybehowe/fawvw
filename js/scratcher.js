@@ -137,15 +137,15 @@ Scratcher.prototype._setupCanvases = function() {
 		this.recompositeCanvases();
 
 		this.dispatchEvent(this.createEvent('scratchesbegan'));
-		if(isTrue){
-			if(timer2){
-				clearTimeout(timer2); //停止计时器
-			}
-			clock();
-		}
-		isTrue = false;
-		$('.startPage .ft').hide();
-		return false;
+		// if(isTrue){
+		// 	if(timer2){
+		// 		clearTimeout(timer2); //停止计时器
+		// 	}
+		// 	clock();
+		// }
+		// isTrue = false;
+		// $('.startPage .ft').hide();
+		// return false;
 	};
 
 
@@ -160,11 +160,11 @@ Scratcher.prototype._setupCanvases = function() {
 		this.recompositeCanvases();
 
 		e.preventDefault();
-		if($('.tip').css('display') == 'block'){
-			clearTimeout(timer); //停止计时器
-		}
-		isTrue = false;
-		return false;
+		// if($('.tip').css('display') == 'block'){
+		// 	clearTimeout(timer); //停止计时器
+		// }
+		// isTrue = false;
+		// return false;
 	};
 
 

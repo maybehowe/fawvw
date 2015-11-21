@@ -1,11 +1,358 @@
+.scratcher{
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 1000;
+}
 .core .favor_btn{
 	position: absolute;
 	top: 70px;
 	right: 0;
-	padding: 2px 8px 2px 30px;
+	padding: 2px 8px 2px 36px;
 	font-size: 1.4rem;
-	height: 28px;
+	line-height: 1.4rem;
+	height: 33px;
 	color: #fff;
 	background:#231f20 url(../img/faw_youhui.png) no-repeat 0 0;
-	background-size: 20px 30px;
+	background-size: 25px 37px;
+}
+
+.btn_order{
+	position: absolute;
+	left: 10px;
+	bottom: 50px;
+}
+.btn_thx,.btn_share_friend{
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+}
+
+.btn_choose{
+	position: absolute;
+	left: 10px;
+	bottom: 50px;
+}
+.btn_send{
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+}
+.faw_btn_pro,.faw_btn_next{
+	position: absolute;
+	left: 50%;
+	width: 35px;
+	height: 19px;
+	margin-left: -17px;
+}
+.faw_btn_pro{
+	background:url(../img/faw_btn_pro.png) no-repeat 0 0;
+	background-size: 35px 19px;
+	top: 24%;
+}
+.faw_btn_pro.unable,.faw_btn_next.unable{
+	opacity: 0.5;
+}
+.faw_btn_next{
+	background:url(../img/faw_btn_next.png) no-repeat 0 0;
+	background-size: 35px 19px;
+	bottom: 20%;
+}
+.btn_choose .faw_btn_center,.btn_send .faw_btn_center{
+	padding:0 15px;
+}
+.to_icon{
+	font-size: 1.6rem;
+	line-height: 30px;
+}
+.btn_order .btn_icon_left{
+	float: left;
+	height: 36px;
+	width: 18px;
+	background: url(../img/faw_order_icon.png) no-repeat center center;
+	background-size: 18px 18px;
+}
+.btn_share_friend .btn_icon_left{
+	float: left;
+	height: 36px;
+	width: 18px;
+	background: url(../img/faw_friend_icon.png) no-repeat center center;
+	background-size: 18px 18px;
+}
+.btn_order .btn_icon_right,.btn_thx .btn_icon_right,.btn_share_friend .btn_icon_right{
+	float: right;
+	height: 36px;
+	width: 14px;
+	background: url(../img/faw_to_icon.png) no-repeat center center;
+	background-size: 13px 14px;
+}
+.btn_order .btn_text,.btn_thx .btn_text,.btn_share_friend .btn_text{
+	float: left;
+	padding:0 6px;
+}
+
+.faw_close_btn{
+	/*border:1px #fff solid;*/
+	position: absolute;
+	width: 9%;
+	height: 5%;
+	right: 9px;
+	top: 9%;
+	z-index: 999;
+}
+.favor_detail{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	font-size: 1.6rem;
+}
+.favor_detail_left{
+	text-align: left;
+	text-indent: 4px;
+	top: 35%;
+	font-size: 1rem;
+}
+.favor_detail p{
+	margin-bottom: 10px;
+}
+.favor_detail_left p{
+	margin-bottom: 2px;
+}
+.favor_detail span{
+	display: block;
+	line-height: 1.8rem;
+}
+.favor_detail_left span{
+	line-height: 1.6rem;
+}
+.favor_detail .faw_title{
+	font-weight: bold;
+}
+.favor_detail .faw_detail_text{
+	font-size: 1.4rem;
+	color: #d70000;
+}
+.favor_detail_left .faw_detail_text{
+	text-indent: 14px;
+	font-size: 1rem;
+}
+.favor_detail_left .faw_detail_text_black{
+	color: #000;
+	font-weight: bold;
+}
+
+#page_3_2 .favor_detail_left{
+	text-indent: 10px;
+	top: 40%;
+	font-size: 1.2rem;
+}
+#page_3_2 .favor_detail_left .faw_detail_text{
+	text-indent: 28px;
+	font-size: 1.2rem;
+}
+
+.faw_btn_qin{
+	position: absolute;
+	bottom: 120px;
+	left: 10px;
+	width: 140px;
+	height: 42px;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 40px;
+	background:url(../img/faw_btn_1.png) no-repeat 0 0;
+	background-size: 140px 42px;
+	color: #d70000;
+	font-weight: bold;
+}
+.faw_btn_peng{
+	position: absolute;
+	bottom: 120px;
+	right: 10px;
+	width: 154px;
+	height: 42px;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 40px;
+	background:url(../img/faw_btn_2.png) no-repeat 0 0;
+	background-size: 154px 42px;
+	color: #d70000;
+	font-weight: bold;
+}
+.faw_btn_all{
+	position: absolute;
+	bottom: 64px;
+	left: 50%;
+	width: 178px;
+	height: 42px;
+	margin-left: -89px;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 40px;
+	background:url(../img/faw_btn_3.png) no-repeat 0 0;
+	background-size: 178px 42px;
+	color: #d70000;
+	font-weight: bold;
+}
+.faw_thx_text{
+	position: absolute;
+	width: 100%;
+	top:35%;
+}
+.faw_thx_text img{
+	width: 100%;
+}
+
+.order_form{
+	position: absolute;
+	width: 100%;
+	top: 28%;
+	/*text-align: center;*/
+}
+.order_form .item{
+	padding:0 20px;
+	margin-bottom: 10px;
+}
+
+.order_form .item label{
+	display: inline-block;
+	width: 18%;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-weight: bold;
+}
+textarea{
+	background-color:transparent;
+}
+.order_form .item input[type="text"]{
+	background-color:transparent;
+	border:1px #000 solid;
+	height: 2.2rem;
+	width: 80%;
+	-webkit-appearance : none ;
+}
+.order_form .item .female_lbl{
+	margin-left: 40px;
+}
+.order_form .item .city_lbl{
+	margin-left: 8%;
+}
+.order_form .item select{
+	background-color:transparent;
+	background:url(../img/faw_select_icon.png) no-repeat center right;
+	background-size: 18px 16px;
+	border:1px #000 solid;
+	height: 2.2rem;
+}
+.order_form .item .select_car{
+	display: inline-block;
+	width: 80%;
+}
+.order_form .item .select_province,.order_form .item .select_city{
+	width: 26%;
+}
+.order_text{
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.btn_confirm{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -42px;
+}
+.textarea{
+	position: absolute;
+	top: 42%;
+	width: 100%;
+	height: 20%;
+}
+.saysth{
+	resize: none;
+	display: inline-block;
+	width: 87%;
+	height: 100%;
+	margin:0 auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -45%;
+	font-size: 1.4rem;
+	color: #000;
+	border:0;
+}
+.btn_share{
+	left: 50%;
+	margin-left: -70px;
+	bottom: 60px;
+}
+@media screen and (min-width:375px){
+	.core .favor_btn{
+		position: absolute;
+		top: 70px;
+		right: 0;
+		padding: 4px 8px 2px 36px;
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+		height: 31px;
+	}
+	.btn_order{
+		left: 20px;
+	}
+	.btn_thx,.btn_share_friend{
+		right: 20px;
+	}
+	.favor_detail{
+		font-size: 1.8rem;
+	}
+	.favor_detail_left{
+		font-size: 1.3rem;
+		text-indent: 16px;
+	}
+	.favor_detail span{
+		display: block;
+		line-height: 2.0rem;
+	}
+	.favor_detail .faw_title{
+		margin-bottom: 4px;
+	}
+	.favor_detail .faw_detail_text{
+		font-size: 1.6rem;
+	}
+	.favor_detail_left .faw_detail_text{
+		font-size: 1.3rem;
+		text-indent: 28px;
+	}
+	#page_3_2 .favor_detail_left{
+		text-indent: 10px;
+		top: 40%;
+		font-size: 1.4rem;
+	}
+	#page_3_2 .favor_detail_left .faw_detail_text{
+		text-indent: 32px;
+		font-size: 1.4rem;
+	}
+	.faw_btn_qin{
+		left: 20px;
+	}
+	.faw_btn_peng{
+		right: 20px;
+	}
+	.btn_choose{
+		left: 20px;
+	}
+	.btn_send{
+		right: 20px;
+	}
+	.order_form .item label{
+		line-height: 2.6rem;
+	}
+	.order_form .item input[type="text"]{
+		height: 2.4rem;
+	}
+	.order_form .item select{
+		height: 2.4rem;
+	}
 }

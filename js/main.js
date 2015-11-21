@@ -14,12 +14,35 @@
 		}
 	}
 
-	var scratcher = new Scratcher('scratcher',underImg,coverImg,width,height);
+	// var scratcher = new Scratcher('scratcher',underImg,coverImg,width,height);
 
 
-	scratcher.on('reset', function () {
+	// scratcher.on('reset', function () {
 		
-	});
+	// });
 
-	scratcher.on('scratchesended', scratcherChanged);
+	// scratcher.on('scratchesended', scratcherChanged);
 })()
+
+var oPage = {
+	pages: $('.page'),
+	init: function(){
+		var self = this
+
+		self.bind()
+	},
+	bind: function(){
+
+	},
+	show: function(target){
+		var self = this
+
+		self.pages.hide()
+		$('#page_'+target).show()
+	}
+}
+
+$(function(){
+	oPage.init()
+	oPage.show('1_1')
+})

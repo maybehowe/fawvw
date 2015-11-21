@@ -1,0 +1,11 @@
+.core .favor_btn{
+	position: absolute;
+	top: 70px;
+	right: 0;
+	padding: 2px 8px 2px 30px;
+	font-size: 1.4rem;
+	height: 28px;
+	color: #fff;
+	background:#231f20 url(../img/faw_youhui.png) no-repeat 0 0;
+	background-size: 20px 30px;
+}

@@ -39,7 +39,7 @@ function Scratcher(canvasId, coverImg, babyImg, canvasWidth, canvasHeight) {
 	this.isTouch = typeof window.ontouchstart !== 'undefined';
 	this.mouseDown = false;
 	this.canvasId = canvasId;	
-	this.coverImg = document.createElement('img'); // 足球宝贝
+	this.coverImg = document.createElement('img'); 
 	this.babyImg = babyImg;
 	this.canvasWidth = canvasWidth;
 	this.canvasHeight = canvasHeight;
@@ -100,7 +100,7 @@ Scratcher.prototype.recompositeCanvases = function() {
 
 
 Scratcher.prototype.scratchLine = function(x, y, fresh) {
-	this.drawctx.lineWidth = 50; //笔触宽度
+	this.drawctx.lineWidth = 80; //笔触宽度
 	this.drawctx.lineCap = this.drawctx.lineJoin = 'round';
 	this.drawctx.strokeStyle = '#111'; //不能用#000
 	if (fresh) {

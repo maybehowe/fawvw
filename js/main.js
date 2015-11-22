@@ -110,7 +110,7 @@
 var width = parseInt($(window).width());
 var height = width * 1034 / 512;
 var coverImg = 'img/faw_cover.png',
-	underImg = 'img/faw_1_1.jpg';
+	underImg = 'img/faw_bg.png';
 
 
 //判断刮了百分多少了
@@ -156,30 +156,25 @@ var oPage = {
 	},
 	load: function(){
 		var self = this,
-			iImgCount = $('img').length,
-			iImgTmp = 0;
+			iImgCount = self.images.length,
+			iImgTmp = 0
 
-		// console.log('iImgCount:',iImgCount);
+		self.images.each(function(){
+			var oThis = $(this),
+				sSrc = oThis.attr('src')
 
-		// $('img').on('load',function () {
-		// 	if(!--iImgCount){
-		// 		console.log(iImgCount);
-		//         $('#load_loading').remove()
-		// 		$('#load_scratch').addClass('show')
-		//     }
-		// })
+			oThis
+				.attr('src', '')
+				.on('load', function(){
+					iImgTmp ++
 
-		// self.images.each(function(){
-		// 	var oThis = $(this)
-		// 	oThis.on('load', function(){
-		// 		iImgTmp ++
-		// 		console.log('iImgTmp:',iImgTmp);
-		// 		if(iImgTmp == iImgCount){
-		// 			$('#load_loading').remove()
-		// 			$('#load_scratch').addClass('show')
-		// 		}
-		// 	})
-		// })
+					if(iImgTmp == iImgCount){
+						$('#load_loading').remove()
+						$('#load_scratch').addClass('show')
+					}
+				})
+				.attr('src', sSrc)
+		})
 	}
 }
 

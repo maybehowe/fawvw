@@ -156,20 +156,30 @@ var oPage = {
 	},
 	load: function(){
 		var self = this,
-			iImgCount = self.images.length,
-			iImgTmp = 0
+			iImgCount = $('img').length,
+			iImgTmp = 0;
 
-		self.images.each(function(){
-			var oThis = $(this)
-			oThis.on('load', function(){
-				iImgTmp ++
+		// console.log('iImgCount:',iImgCount);
 
-				if(iImgTmp == iImgCount){
-					$('#load_loading').remove()
-					$('#load_scratch').addClass('show')
-				}
-			})
-		})
+		// $('img').on('load',function () {
+		// 	if(!--iImgCount){
+		// 		console.log(iImgCount);
+		//         $('#load_loading').remove()
+		// 		$('#load_scratch').addClass('show')
+		//     }
+		// })
+
+		// self.images.each(function(){
+		// 	var oThis = $(this)
+		// 	oThis.on('load', function(){
+		// 		iImgTmp ++
+		// 		console.log('iImgTmp:',iImgTmp);
+		// 		if(iImgTmp == iImgCount){
+		// 			$('#load_loading').remove()
+		// 			$('#load_scratch').addClass('show')
+		// 		}
+		// 	})
+		// })
 	}
 }
 

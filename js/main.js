@@ -165,7 +165,7 @@ var oPage = {
 				iImgTmp ++
 
 				if(iImgTmp == iImgCount){
-					$('#load_loading').removeClass('show')
+					$('#load_loading').remove()
 					$('#load_scratch').addClass('show')
 				}
 			})

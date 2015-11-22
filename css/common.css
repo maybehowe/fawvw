@@ -151,8 +151,8 @@ header a{
   background-image: url(../img/logo_right.png);
   background-size: 25px 32px;
 }
-.page{position: relative;display: none;}
-.page img:first-child{width: 100%;display: block;}
+.page{position: relative;display: none; width: 100%;height: 100%;}
+.page img:first-child{width: 100%; height: 100%; display: block;}
 .core{position: absolute;top: 0;z-index: 10;width: 100%;height: 100%;}
 .faw_btn{overflow: hidden;}
 .faw_btn_left{float: left; height: 41px;width: 9px;background: url(../img/faw_btn_left.png) no-repeat;background-size: 9px 41px;}
@@ -166,6 +166,67 @@ header a{
 .loading{height: 100%;background: #cccccc url(../img/loading.gif) no-repeat center center;}
 .scratch{height: 100%;}
 /*#page_4_1{display: block;}*/
+#page_1_1{
+  background: url(../img/faw_1_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_1_2{
+  background: url(../img/faw_1_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_2_1{
+  background: url(../img/faw_2_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_2_2{
+  background: url(../img/faw_2_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_3_1{
+  background: url(../img/faw_3_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_3_2{
+  background: url(../img/faw_3_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_4_1{
+  background: url(../img/faw_4_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_4_2{
+  background: url(../img/faw_4_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_4_3{
+  background: url(../img/faw_4_3.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_4_4{
+  background: url(../img/faw_4_4.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_5_1{
+  background: url(../img/faw_5_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#page_7_1{
+  background: url(../img/faw_7_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_7_2{
+  background: url(../img/faw_7_2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#page_7_3{
+  background: url(../img/faw_7_3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.need_load{
+  position: absolute;
+  left: -99999px;
+}
 
 .scratcher{
   position: absolute;
@@ -189,23 +250,23 @@ header a{
 .btn_order{
   position: absolute;
   left: 10px;
-  bottom: 50px;
+  bottom: 30px;
 }
 .btn_thx,.btn_share_friend{
   position: absolute;
   right: 10px;
-  bottom: 50px;
+  bottom: 30px;
 }
 
 .btn_choose{
   position: absolute;
   left: 10px;
-  bottom: 50px;
+  bottom: 30px;
 }
 .btn_send{
   position: absolute;
   right: 10px;
-  bottom: 50px;
+  bottom: 30px;
 }
 .faw_btn_pro,.faw_btn_next{
   position: absolute;
@@ -225,7 +286,7 @@ header a{
 .faw_btn_next{
   background:url(../img/faw_btn_next.png) no-repeat 0 0;
   background-size: 35px 19px;
-  bottom: 20%;
+  bottom: 18%;
 }
 .btn_choose .faw_btn_center,.btn_send .faw_btn_center{
   padding:0 15px;
@@ -265,7 +326,7 @@ header a{
   position: absolute;
   width: 9%;
   height: 5%;
-  right: 9px;
+  right: 7%;
   top: 9%;
   z-index: 999;
 }
@@ -279,7 +340,7 @@ header a{
 .favor_detail_left{
   text-align: left;
   text-indent: 4px;
-  top: 35%;
+  top: 36%;
   font-size: 1rem;
 }
 .favor_detail p{
@@ -293,7 +354,7 @@ header a{
   line-height: 1.8rem;
 }
 .favor_detail_left span{
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 .favor_detail .faw_title{
   font-weight: bold;
@@ -323,7 +384,7 @@ header a{
 
 .faw_btn_qin{
   position: absolute;
-  bottom: 120px;
+  bottom: 80px;
   left: 10px;
   width: 140px;
   height: 42px;
@@ -337,7 +398,7 @@ header a{
 }
 .faw_btn_peng{
   position: absolute;
-  bottom: 120px;
+  bottom: 80px;
   right: 10px;
   width: 154px;
   height: 42px;
@@ -351,7 +412,7 @@ header a{
 }
 .faw_btn_all{
   position: absolute;
-  bottom: 64px;
+  bottom: 30px;
   left: 50%;
   width: 178px;
   height: 42px;
@@ -435,25 +496,25 @@ textarea{
 }
 .btn_confirm{
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   left: 50%;
   margin-left: -42px;
 }
 .textarea{
   position: absolute;
-  top: 42%;
+  top: 45%;
   width: 100%;
-  height: 20%;
+  height: 22%;
 }
 .saysth{
   resize: none;
   display: inline-block;
-  width: 87%;
+  width: 84%;
   height: 100%;
   margin:0 auto;
   position: absolute;
   left: 50%;
-  margin-left: -45%;
+  margin-left: -43%;
   font-size: 1.4rem;
   color: #000;
   border:0;
@@ -461,7 +522,7 @@ textarea{
 .btn_share{
   left: 50%;
   margin-left: -70px;
-  bottom: 60px;
+  bottom: 20px;
 }
 @media screen and (min-width:375px){
   .core .favor_btn{
@@ -488,10 +549,10 @@ textarea{
   }
   .favor_detail span{
     display: block;
-    line-height: 2.0rem;
+    line-height: 1.8rem;
   }
   .favor_detail .faw_title{
-    margin-bottom: 4px;
+    /*margin-bottom: 4px;*/
   }
   .favor_detail .faw_detail_text{
     font-size: 1.6rem;

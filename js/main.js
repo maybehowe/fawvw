@@ -109,8 +109,8 @@
 //获取canvas要设置的宽高
 var width = parseInt($(window).width());
 var height = width * 1034 / 512;
-var coverImg = 'img/faw_cover.png',
-	underImg = 'img/faw_bg.png';
+var coverImg = 'img/faw_cover.jpg',
+	underImg = 'img/faw_bg.jpg';
 
 
 //判断刮了百分多少了

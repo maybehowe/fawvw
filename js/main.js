@@ -1,30 +1,5 @@
 (function() {
-	$('.faw_btn_swipe').on('click',function () {
-		if($(this).hasClass('unable')){
-			return
-		}else{
-			var type = $(this).attr('type'),
-				cur = $('.faw_thx_text').attr('cur');
-			$('.faw_btn_swipe').removeClass('unable');
-			if(cur == '2'){
-				$(this).addClass('unable');
-			}
-			if((cur == '3' && type == 'next') || (cur == '1' && type == 'pro')){
-				return
-			}else{
-				if(type == 'pro'){
-					cur = Number(cur) - 1;
-				}else{
-					cur = Number(cur) + 1;
-				}
-			}
-			var page = $(this).closest('.page').attr('id').split('_');
-			var img = ['faw', page[1], page[2], cur].join('_');
-			$('.faw_thx_text').attr('cur', cur);
-			$(this).closest('.core').find('.faw_thx_img').attr('src','img/' + img + '.jpg');
-
-		}
-	});
+	var cur = null;
 
 	$('#active_info').on('click', function () {
 		oPage.show('1_2');
@@ -61,6 +36,75 @@
 	$('.btn_share').on('click', function () {
 		oPage.show('7_3');
 	});
+
+	$('#order_drive_close').on('click', function () {
+		oPage.show(cur + '_1');
+	});
+
+	$('.btn_order_drive').on('click', function () {
+		cur = $(this).closest('.page').attr('id').split('_')[1];
+		oPage.show('7_1');
+	});
+
+	$('.btn_thx').on('click',function () {
+		oPage.show('4_1');
+	});
+
+	$('.btn_choose').on('click', function () {
+		oPage.show('4_1');
+	});
+
+	$('.faw_btn_qin').on('click',function () {
+		oPage.show('4_3');
+		var mySwiper = new Swiper ('.qin_container', {
+		    direction: 'vertical',
+		    loop: true,
+		    autoplay: 3000,
+		    autoplayDisableOnInteraction: false,
+		    nextButton: '.qin_next',
+		    prevButton: '.qin_prev'
+		});
+	});
+
+	$('.faw_btn_peng').on('click',function () {
+		oPage.show('4_2');
+		var mySwiper = new Swiper ('.peng_container', {
+		    direction: 'vertical',
+		    loop: true,
+		    autoplay: 3000,
+		    autoplayDisableOnInteraction: false,
+		    nextButton: '.peng_next',
+		    prevButton: '.peng_prev'
+		});
+	});
+
+	$('.faw_btn_all').on('click',function () {
+		oPage.show('4_4');
+		var mySwiper = new Swiper ('.all_container', {
+		    direction: 'vertical',
+		    loop: true,
+		    autoplay: 3000,
+		    autoplayDisableOnInteraction: false,
+		    nextButton: '.all_next',
+		    prevButton: '.all_prev'
+		});
+	});
+
+	$('.btn_send_qin').on('click',function () {
+		oPage.show('3_1');
+	});
+
+	$('.btn_send_peng').on('click',function () {
+		oPage.show('2_1');
+	});
+
+	$('.btn_send_all').on('click',function () {
+		oPage.show('5_1');
+	});
+
+	$('.btn_share_friend').on('click', function () {
+		oPage.show('7_3');
+	});
 })()
 //获取canvas要设置的宽高
 var width = parseInt($(window).width());
@@ -87,6 +131,9 @@ scratcher.on('reset', function () {
 });
 
 scratcher.on('scratchesended', scratcherChanged);
+
+
+
 var oPage = {
 	pages: $('.page'),
 	images: $('img'),
@@ -96,11 +143,7 @@ var oPage = {
 		self.bind()
 		self.load()
 
-		// $('#load_scratch').click(function(event) {
-		// 	var oThis = $(this)	
-		// 	oThis.removeClass('show')
-		// 	self.show('4_1')
-		// })
+		  
 	},
 	bind: function(){
 
@@ -122,7 +165,6 @@ var oPage = {
 				iImgTmp ++
 
 				if(iImgTmp == iImgCount){
-					alert();
 					$('#load_loading').removeClass('show')
 					$('#load_scratch').addClass('show')
 				}

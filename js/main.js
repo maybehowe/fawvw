@@ -160,15 +160,20 @@ var oPage = {
 			iImgTmp = 0
 
 		self.images.each(function(){
-			var oThis = $(this)
-			oThis.on('load', function(){
-				iImgTmp ++
+			var oThis = $(this),
+				sSrc = oThis.attr('src')
 
-				if(iImgTmp == iImgCount){
-					$('#load_loading').remove()
-					$('#load_scratch').addClass('show')
-				}
-			})
+			oThis
+				.attr('src', '')
+				.on('load', function(){
+					iImgTmp ++
+
+					if(iImgTmp == iImgCount){
+						$('#load_loading').remove()
+						$('#load_scratch').addClass('show')
+					}
+				})
+				.attr('src', sSrc)
 		})
 	}
 }

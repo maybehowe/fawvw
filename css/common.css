@@ -164,7 +164,7 @@ header a{
 #page_load > *{display: none;}
 #page_load > *.show{display: block;}
 .loading{height: 100%;background: #cccccc url(../img/loading.gif) no-repeat center center;}
-.scratch{height: 100%;background: #000;}
+.scratch{height: 100%;}
 /*#page_4_1{display: block;}*/
 
 .scratcher{

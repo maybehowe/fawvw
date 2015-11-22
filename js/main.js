@@ -110,7 +110,7 @@
 var width = parseInt($(window).width());
 var height = width * 1034 / 512;
 var coverImg = 'img/faw_cover.png',
-	underImg = 'img/faw_1_1.jpg';
+	underImg = 'img/faw_bg.png';
 
 
 //判断刮了百分多少了

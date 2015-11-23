@@ -1,5 +1,6 @@
 (function() {
-	var cur = null;
+	var cur = null,
+		share = false;
 
 	$('#active_info').on('click', function () {
 		oPage.show('1_2');
@@ -42,7 +43,12 @@
 	});
 
 	$('#order_drive_close').on('click', function () {
-		oPage.show(cur + '_1');
+		if(cur == '7'){
+			oPage.show(cur + '_3');
+		}else{
+			oPage.show(cur + '_1');
+		}
+		
 	});
 
 	$('.btn_order_drive').on('click', function () {

@@ -9,6 +9,10 @@
 		oPage.show('1_1');
 	});
 
+	$('#faw_thx_back').on('click', function(){
+		oPage.show('1_1');
+	})
+
 	$('#favor_info_golf').on('click', function () {
 		oPage.show('2_2');
 	});

@@ -252,6 +252,10 @@ header a{
   left: 10px;
   bottom: 30px;
 }
+.btn_order.btn_center{
+  left: 50%;
+  margin-left: -67px;
+}
 .btn_thx,.btn_share_friend{
   position: absolute;
   right: 10px;

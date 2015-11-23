@@ -434,6 +434,17 @@ header a{
 .faw_thx_text img{
   width: 100%;
 }
+.faw_thx_back{
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  margin: 10px;
+  background: url(../img/faw_white_border.png) no-repeat center bottom;
+}
 
 .order_form{
   position: absolute;

@@ -116,7 +116,7 @@ var coverImg = 'img/faw_cover.jpg',
 //判断刮了百分多少了
 function scratcherChanged() {
 	var per = (this.fullAmount(32) * 100)|0;
-	if (per>60) {		
+	if (per>20) {		
 		var scratch_wrap = $('#load_scratch');
 		scratch_wrap.removeClass('show');
 		oPage.show('1_1');
@@ -180,4 +180,18 @@ var oPage = {
 
 $(function(){
 	oPage.init()
-})
+});
+function playPause() {
+    var myVideo = document.querySelectorAll('audio')[0];
+    var music_btn = document.getElementById('music_btn');
+    if (myVideo.paused){
+        myVideo.play();
+        $('.music_btn').addClass('border_anim');
+        musicStatus = true;
+    }
+    else{
+        myVideo.pause();
+        $('.music_btn').removeClass('border_anim');
+        musicStatus = false;
+    }
+}

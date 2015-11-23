@@ -255,6 +255,7 @@ header a{
 .btn_order.btn_center{
   left: 50%;
   margin-left: -67px;
+  bottom: 15px;
 }
 .btn_thx,.btn_share_friend{
   position: absolute;

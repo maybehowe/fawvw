@@ -184,7 +184,6 @@ var oPage = {
 
 $(function(){
 	oPage.init()
-	oPage.show('1_1')
 });
 function playPause() {
     var myVideo = document.querySelectorAll('audio')[0];
